@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/experiencia.css';
+
+const experiences = [
+	{
+		title: "Ingeniero Líder",
+		company: "TechInnovate Solutions",
+		period: "2020 - Presente",
+		description: "Lidero un equipo de 15 desarrolladores en proyectos de transformación digital para clientes Fortune 500. Implementé prácticas de DevOps que redujeron el tiempo de despliegue en un 40%."
+	},
+	{
+		title: "Desarrollador Senior Full-Stack",
+		company: "DataDriven Systems",
+		period: "2017 - 2020",
+		description: "Diseñé y desarrollé aplicaciones web escalables utilizando React y Node.js. Mejoré el rendimiento de las aplicaciones existentes, reduciendo los tiempos de carga en un 60%."
+	},
+	{
+		title: "Desarrollador de Software",
+		company: "InnoSoft Corp",
+		period: "2013 - 2017",
+		description: "Trabajé en el desarrollo de sistemas de gestión empresarial utilizando Java y Spring Framework. Colaboré en la migración de aplicaciones monolíticas a arquitecturas de microservicios."
+	}
+];
+---
+
+<Layout title="Experiencia - Adrián Gosálvez">
+	<h1>Experiencia Profesional</h1>
+	<section class="experience">
+		{experiences.map((exp) => (
+			<div class="experience-item">
+				<h2>{exp.title}</h2>
+				<h3>{exp.company}</h3>
+				<p class="period">{exp.period}</p>
+				<p>{exp.description}</p>
+			</div>
+		))}
+	</section>
+	<section class="skills">
+		<h2>Habilidades y Tecnologías</h2>
+		<ul>
+			<li>Liderazgo de Equipo y Mentoría</li>
+			<li>Metodologías Ágiles</li>
+			<li>Diseño de Arquitectura de Software</li>
+			<li>Desarrollo Full-Stack</li>
+			<li>Computación en la Nube (AWS, Azure)</li>
+			<li>DevOps y CI/CD</li>
+			<li>Optimización de Rendimiento</li>
+			<li>Revisión de Código y Control de Calidad</li>
+		</ul>
+	</section>
+</Layout>

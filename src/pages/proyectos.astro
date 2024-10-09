@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/proyectos.css';
+
+const projects = [
+	{
+		title: "Sistema de Planificación de Recursos Empresariales",
+		description: "Lideré el desarrollo de un sistema ERP integral para una corporación multinacional, mejorando la eficiencia operativa en un 30%.",
+		technologies: ["Java", "Spring Boot", "React", "PostgreSQL"]
+	},
+	{
+		title: "Renovación de Plataforma de Comercio Electrónico",
+		description: "Encabecé el rediseño y la optimización de una plataforma de comercio electrónico de alto tráfico, resultando en un aumento del 50% en las tasas de conversión.",
+		technologies: ["Node.js", "Express", "Vue.js", "MongoDB"]
+	},
+	{
+		title: "Solución de Gestión de Dispositivos IoT",
+		description: "Diseñé e implementé un sistema escalable de gestión de dispositivos IoT capaz de manejar millones de dispositivos conectados en tiempo real.",
+		technologies: ["Python", "Django", "MQTT", "InfluxDB"]
+	}
+];
+---
+
+<Layout title="Proyectos - Adrián Gosálvez">
+	<h1>Mis Proyectos</h1>
+	<p class="intro">Aquí están algunos de los proyectos clave que he liderado y en los que he contribuido a lo largo de mi carrera:</p>
+	<div class="project-grid">
+		{projects.map((project) => (
+			<div class="project-card">
+				<h2>{project.title}</h2>
+				<p>{project.description}</p>
+				<div class="technologies">
+					{project.technologies.map((tech) => (
+						<span class="tech-tag">{tech}</span>
+					))}
+				</div>
+			</div>
+		))}
+	</div>
+</Layout>

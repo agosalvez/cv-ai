@@ -1,0 +1,29 @@
+.bio {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.about-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skills li {
+  background-color: rgb(var(--accent-light));
+  color: rgb(var(--accent-dark));
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}

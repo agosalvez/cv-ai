@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Adrián Gosálvez">
+	<h1>About Me</h1>
+	<section class="bio">
+		<img src="/adrian-working.jpg" alt="Adrián Gosálvez working" class="about-image">
+		<div>
+			<h2>Adrián Gosálvez</h2>
+			<h3>Lead Engineer / Tech Lead</h3>
+			<p>
+				With 10 years of experience in the software industry, I've had the privilege of working
+				on a wide range of projects and technologies. My journey has taken me from a junior
+				developer to my current role as a Lead Engineer, where I combine my technical expertise
+				with leadership skills to drive teams towards success.
+			</p>
+			<p>
+				I'm passionate about creating efficient, scalable, and maintainable software solutions.
+				My approach involves staying up-to-date with the latest industry trends and best practices,
+				and applying them thoughtfully to solve complex business problems.
+			</p>
+		</div>
+	</section>
+	<section class="skills">
+		<h2>Skills & Expertise</h2>
+		<ul>
+			<li>Team Leadership & Mentoring</li>
+			<li>Agile Methodologies</li>
+			<li>Software Architecture Design</li>
+			<li>Full-Stack Development</li>
+			<li>Cloud Computing (AWS, Azure)</li>
+			<li>DevOps & CI/CD</li>
+			<li>Performance Optimization</li>
+			<li>Code Review & Quality Assurance</li>
+		</ul>
+	</section>
+</Layout>
+
+<style>
+	.bio {
+		display: flex;
+		gap: 2rem;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+	.about-image {
+		width: 300px;
+		height: auto;
+		border-radius: 10px;
+		box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+	}
+	.skills ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		padding: 0;
+		list-style-type: none;
+	}
+	.skills li {
+		background-color: rgb(var(--accent-light));
+		color: rgb(var(--accent-dark));
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-weight: bold;
+	}
+</style>
